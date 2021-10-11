@@ -1,0 +1,273 @@
+/**BEGIN GENERAL CLASSES**/
+*{
+    box-sizing: border-box;
+}
+.d-flex{
+    display:flex;
+}
+.flex-column{
+    flex-direction:column;
+}
+.flex-row{
+    flex-direction:row;
+}
+/*horizontaal positioneren van children binnen de parent*/
+justify-content-start{
+    justify-content:flex-start;
+}
+.justify-content-end{
+    justify-content:flex-end;
+}
+.justify-content-center{
+    justify-content:center;
+}
+.justify-content-between{
+    justify-content:space-between;
+}
+.justify-content-around{
+    justify-content:space-around;
+}
+.flex-wrap{
+    flex-wrap:wrap;
+}
+.flex-nowrap{
+    flex-wrap:nowrap;
+}
+.flex-grow-1{
+    flex-grow: 1;
+}
+/*verticaal centreren van children tov de parent*/
+.align-items-center{
+    align-items:center;
+}
+
+.w-25{
+    width:25%;
+}
+.w-46{
+    width:46%;
+}
+.w-50{
+    width:50%;
+}
+.w-54{
+    width:54%;
+}
+.w-75{
+    width:75%;
+}
+.w-100{
+    width:100%;
+}
+.text-uppercase{
+    text-transform:uppercase;
+}
+.text-lowercase{
+    text-transform: lowercase;
+}
+.text-capitalize{
+    text-transform: capitalize;
+}
+@font-face {
+    font-family: HelveticaNeueBold;
+    src: url('../webfonts/HelveticaNeuBold.ttf');
+}
+@font-face {
+    font-family: HelveticaNeue;
+    src: url('../webfonts/HelveticaNeue.ttf');
+}
+*{
+    margin:0;
+    padding:0;
+}
+header {
+    width: 1280px;
+    margin: 0 auto;
+    background: linear-gradient(to right, rgba(6, 181, 169, 0.38), rgba(6, 181, 169, 0.38)), url('../images/background.png') no-repeat;
+    background-size: cover;
+}
+body {
+    width: 1280px;
+    margin: 0 auto;
+    font-family: HelveticaNeueBold;
+}
+
+/*BEGIN NAVIGATIE*/
+#navbar{
+    width: 1280px;
+    margin:0 auto;
+    background-color:#ffffff;
+    height: 87px;
+    opacity: 0.9;
+}
+#navbar h1{
+    padding-top:20px;
+    color: #626262;
+}
+#navbar nav li {
+    padding-top:40px;
+    list-style: none;
+
+}
+#navbar nav li a {
+    text-decoration: none;
+    list-style: none;
+    padding-right: 40px;
+    color: #01090f;
+    font-family: HelveticaNeue;
+}
+#navbar nav li a:hover {
+    border: 3px solid #5094f2;
+    padding: 3px;
+}
+#winkelmand {
+    width: 30px;
+    height: 30px;
+    margin-top: 40px;
+    margin-right: 150px;
+}
+#brandname{
+    font-family: HelveticaNeueBold;
+    font-size: 33pt;
+    padding-left: 40px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 20px;
+    color: #01090f;
+}
+#herotext{
+    padding-top:260px;
+    padding-bottom: 150px;
+    font-family: HelveticaNeueBold;
+    font-size: 50pt;
+    color:white;
+}
+#title{
+    font-size: 116px;
+    position: absolute;
+    font-family: Impact;
+}
+#subtitle{
+    font-family: HelveticaNeue;
+    font-size:22px;
+    letter-spacing: 30px;
+    position: relative;
+    padding-bottom: 70px;
+}
+/*END NAVIGATIE*/
+/*BEGIN MAIN*/
+#activitee{
+    background-color: #58dbd3;
+    width: 244px;
+    height: 252px;
+    color: white;
+    position: relative;
+}
+#blacktee{
+    position: absolute;
+    top:0px;
+    padding-top:13px;
+}
+#activitee img{
+    padding-left: 112px;
+
+}
+#activitee h2{
+    padding-left: 25px;
+}
+
+#ampersan{
+    background-color: #e4ce9a;
+    width: 244px;
+    height: 252px;
+    color: white;
+    position: relative;
+}
+#yellowtee{
+    position:absolute;
+    top:0px;
+    padding-top:67px;
+}
+#ampersan h2{
+    padding-left: 25px;
+}
+#ampersan img{
+    padding-left:101px;
+}
+#ballyrog{
+    background-color: #ffa7ce;
+    width: 244px;
+    height: 252px;
+    color: white;
+    position: relative;
+}
+#ballytee{
+    position:absolute;
+    top:0px;
+    padding-top: 93px;
+}
+#ballyrog img{
+    padding-left: 109px;
+}
+#ballyrog h2{
+    padding-left: 25px;
+}
+#ballyrog p{
+    padding-left: 25px;
+}
+#letsgo{
+    background-color: #f2ca66;
+    width: 244px;
+    height: 252px;
+    color: white;
+    position: relative;
+}
+#artikelen{
+    padding-top: 45px;
+    padding-left: 129px;
+    padding-right: 129px;
+}
+.prijs{
+    margin:0px;
+    font-size: 40pt;
+    color: #414049;
+    position:absolute;
+    bottom:10px;
+}
+#letsgo p{
+    background-color: white;
+    color: #01090f;
+    font-size: 26pt;
+    color: #f2ca66;
+    margin-right: 86px;
+
+}
+span2 {
+    display: Inline-block;
+    margin: 50px;
+}
+
+.GFG {
+    transform: scale(1, -1);
+    color: #000080;
+    -moz-transform: scale(1, -1);
+    -webkit-transform: scale(1, -1);
+    -o-transform: scale(1, -1);
+    -ms-transform: scale(1, -1);
+    transform: scale(1, -1);
+    font-size: 100px;
+    margin-top:0;
+    margin-bottom:0;
+    margin-left: 20px;
+    color: white;
+}
+.zebrafoto{
+    position:relative;
+    padding-top: 50px;
+}
+.layer5foto{
+    position:absolute;
+    left:312px;
+}
+
+/*END MAIN*/
